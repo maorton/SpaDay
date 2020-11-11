@@ -48,6 +48,12 @@ namespace SpaDay.Controllers
             };
 
             List<string> appropriateFacials = new List<string>();
+
+            ViewBag.name = name;
+            ViewBag.skintype = skintype;
+            ViewBag.appropriateFacials = appropriateFacials;
+            ViewBag.manipedi = manipedi;
+
             for (int i = 0; i < facials.Count; i++)
             {
                 if (CheckSkinType(skintype, facials[i]))
